@@ -20,17 +20,17 @@ interface NetworkConfig {
 
 export const networkConfig: NetworkConfig = {
   testnet: {
-    url: "https://horizon-testnet.stellar.org",
+    url: "https://api.testnet.minepi.com",
     network: StellarSdk.Networks.TESTNET,
     stellarExpertTxUrl: "https://stellar.expert/explorer/testnet/tx/",
     stellarExpertAccountUrl: "https://stellar.expert/explorer/testnet/account/",
   },
   public: {
-    url: "https://horizon.stellar.org",
+    url: "https://api.testnet.minepi.com",
     network: StellarSdk.Networks.PUBLIC,
     stellarExpertTxUrl: "https://stellar.expert/explorer/public/tx/",
     stellarExpertAccountUrl: "https://stellar.expert/explorer/public/account/",
   },
 };
 
-export const defaultStellarBipPath = "44'/148'/0'";
+export const defaultStellarBipPath = "44'/314159'/0'";
